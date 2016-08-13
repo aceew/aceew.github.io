@@ -1,0 +1,55 @@
+body {
+  background-color: #282C34;
+  color: #585E6B;
+}
+
+.text-theme-orange {
+  color: #D19A66;
+}
+
+.text-theme-cyan {
+  color: #56B6C2;
+}
+
+.text-theme-red {
+  color: #E06C75;
+}
+
+.intro {
+  margin-top: 20%;
+}
+
+.home-page-icons {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 25px 0px;
+  color: #282C34;
+}
+
+.home-page-icons:hover {
+  background-color: #585E6B;
+  color: #56B6C2;
+}
+
+.home-page-icons-container {
+  margin-top: 10%;
+}
+
+.home-page-icons h6 {
+  margin-top: 25px;
+}
+
+.home-page-icons i {
+  text-align: center;
+  font-size: 7em;
+  width: 100%;
+}
+
+.footer {
+  margin-top: 15%;
+  text-align: center;
+}
+
+.footer .column {
+  margin-left: 0;
+}
