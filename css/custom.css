@@ -29,6 +29,7 @@ body {
 .home-page-icons:hover {
   background-color: #585E6B;
   color: #56B6C2;
+  cursor: pointer;
 }
 
 .home-page-icons-container {
