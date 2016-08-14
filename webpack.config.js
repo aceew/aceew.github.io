@@ -2,9 +2,11 @@ var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+var production = process.env.NODE_ENV !== 'development';
+
 module.exports = {
   devtool: 'cheap-module-source-map',
-  entry: [
+  entry: production ? ['./src'] : [
     'webpack-dev-server/client?http://127.0.0.1:8080/',
     'webpack/hot/only-dev-server',
     './src',
