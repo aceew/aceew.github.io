@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --progress -p",
+    "build": "rm public/* && webpack --progress -p",
     "git-add-dist": "git add public/ index.html"
   },
   "pre-commit": [
