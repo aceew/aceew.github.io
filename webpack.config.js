@@ -7,8 +7,6 @@ var production = process.argv.reduce(
   false
 );
 
-console.error(production);
-
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: production ? ['./src'] : [
@@ -18,7 +16,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'bundle.js',
+    filename: Date.now() + '.js',
     resolve: {
       modulesDirectories: ['node_modules', 'src'],
       extensions: ['', '.js'],
