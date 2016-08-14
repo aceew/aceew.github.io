@@ -2,7 +2,12 @@ var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var production = process.env.NODE_ENV !== 'development';
+var production = process.argv.reduce(
+  (previousVal, currentVal) => previousVal ? previousVal: currentVal === '-p',
+  false
+);
+
+console.error(production);
 
 module.exports = {
   devtool: 'cheap-module-source-map',
