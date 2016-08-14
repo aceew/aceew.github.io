@@ -7,8 +7,8 @@ export default class WelcomeMessage extends React.Component {
         <div className="intro">
           <h1>
             Hello, I'm <span className="text-theme-orange">Aaron</span>.
-            I'm a full-stack Software Engineer at
-            <span className="text-theme-red"> Bluetel Solutions</span>.
+            I'm a full-stack Software Engineer from
+            <span className="text-theme-red"> Birmingham</span>.
           </h1>
         </div>
       </div>
