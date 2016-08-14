@@ -24,6 +24,7 @@ body {
   box-sizing: border-box;
   padding: 25px 0px;
   color: #282C34;
+  transition: all 0.3s ease 0s;
 }
 
 .home-page-icons:hover {
