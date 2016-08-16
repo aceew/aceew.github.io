@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var production = process.argv.reduce(
@@ -7,7 +8,9 @@ var production = process.argv.reduce(
   false
 );
 
-module.exports = {
+var bundleName = Date.now();
+
+var webpackConfig = {
   devtool: 'cheap-module-source-map',
   entry: production ? ['./src'] : [
     'webpack-dev-server/client?http://127.0.0.1:8080/',
@@ -15,12 +18,13 @@ module.exports = {
     './src',
   ],
   output: {
+    libraryTarget: 'umd',
+    filename: bundleName + '.js',
     path: path.join(__dirname, 'public'),
-    filename: Date.now() + '.js',
     resolve: {
       modulesDirectories: ['node_modules', 'src'],
       extensions: ['', '.js'],
-    }
+    },
   },
   module: {
     loaders: [
@@ -34,9 +38,23 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+  ],
+};
+
+if (!production) {
+  webpackConfig.plugins.push(
     new HtmlWebpackPlugin({
       template: 'templates/index.html',
       filename: '../index.html',
-    }),
-  ],
-};
+    })
+  )
+}
+
+if (production) {
+  webpackConfig.plugins.push(
+    new StaticSiteGeneratorPlugin(bundleName + '.js', ['../index.html'])
+  );
+}
+
+// webpackConfig.plugins.push
+module.exports = webpackConfig;
