@@ -6,8 +6,9 @@ I needed some sort of landing page for my name and I thought I'd use this as a c
 
 ## Todo
  - [ ] Use and bundle sass css modules.
- - [ ] Switch out react dev with react production on build.
+ - [x] Switch out react dev with react production on build. No longer needed.
  - [ ] Blog post feed
  - [ ] Compile css
  - [ ] Force SSL
- - [ ] Build static html from the react components
+ - [x] Build static html from the react components
+ - [ ]  Use html template for static builds
