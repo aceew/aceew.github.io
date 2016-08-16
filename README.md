@@ -8,3 +8,6 @@ I needed some sort of landing page for my name and I thought I'd use this as a c
  - [ ] Use and bundle sass css modules.
  - [ ] Switch out react dev with react production on build.
  - [ ] Blog post feed
+ - [ ] Compile css
+ - [ ] Force SSL
+ - [ ] Build static html from the react components
