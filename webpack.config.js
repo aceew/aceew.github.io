@@ -1,5 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
+var ejs = require('ejs');
+var fs = require('fs');
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -44,15 +46,22 @@ var webpackConfig = {
 if (!production) {
   webpackConfig.plugins.push(
     new HtmlWebpackPlugin({
-      template: 'templates/index.html',
+      template: './templates/index.ejs',
       filename: '../index.html',
     })
   )
 }
 
 if (production) {
+  var template = ejs
+    .compile(fs.readFileSync(__dirname + '/templates/index.ejs', 'utf-8'));
+
   webpackConfig.plugins.push(
-    new StaticSiteGeneratorPlugin(bundleName + '.js', ['../index.html'])
+    new StaticSiteGeneratorPlugin(
+      bundleName + '.js',
+      ['../index.html'],
+      { template: template }
+    )
   );
 }
 
