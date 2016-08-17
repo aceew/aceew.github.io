@@ -11,4 +11,4 @@ I needed some sort of landing page for my name and I thought I'd use this as a c
  - [ ] Compile css
  - [ ] Force SSL
  - [x] Build static html from the react components
- - [ ]  Use html template for static builds
+ - [x]  Use html template for static builds
