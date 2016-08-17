@@ -56,5 +56,4 @@ if (production) {
   );
 }
 
-// webpackConfig.plugins.push
 module.exports = webpackConfig;
