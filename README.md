@@ -9,6 +9,6 @@ I needed some sort of landing page for my name and I thought I'd use this as a c
  - [x] Switch out react dev with react production on build. No longer needed.
  - [ ] Blog post feed
  - [ ] Compile css
- - [ ] Force SSL
+ - [x] Force SSL
  - [x] Build static html from the react components
  - [x]  Use html template for static builds
