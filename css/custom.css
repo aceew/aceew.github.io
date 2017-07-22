@@ -1,6 +1,7 @@
 body {
   background-color: #282C34;
   color: #585E6B;
+  position: relative;
 }
 
 .text-theme-orange {
@@ -16,18 +17,20 @@ body {
 }
 
 .intro {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
-.home-page-icons {
+a.home-page-icons {
+  display:block;
   text-align: center;
   box-sizing: border-box;
   padding: 25px 0px;
   color: #282C34;
   transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
 
-.home-page-icons:hover {
+a.home-page-icons:hover {
   background-color: #585E6B;
   color: #56B6C2;
   cursor: pointer;
@@ -48,8 +51,12 @@ body {
 }
 
 .footer {
-  margin-top: 15%;
   text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  height: 20px;
 }
 
 .footer .column {

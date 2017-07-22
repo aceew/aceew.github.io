@@ -25,6 +25,11 @@ export default class IconsRow extends React.Component {
         url: 'https://twitter.com/ahycw',
         faIcon: 'fa-twitter',
       },
+      {
+        title: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/aaron-williams-2a7902134/',
+        faIcon: 'fa-linkedin',
+      },
     ];
   }
 
