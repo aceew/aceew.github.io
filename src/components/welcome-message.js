@@ -6,9 +6,9 @@ export default class WelcomeMessage extends React.Component {
       <div className='row'>
         <div className="intro">
           <h1>
-            Hello, I'm <span className="text-theme-orange">Aaron</span>.
-            I'm a full-stack Software Engineer from
-            <span className="text-theme-red"> Birmingham</span>.
+            Hi, I'm <span className="text-theme-orange">Aaron</span>, a full-stack Software Engineer from
+            <span className="text-theme-red"> Birmingham </span>
+            with a passion for Cloud Architecture.
           </h1>
         </div>
       </div>
