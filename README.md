@@ -1,6 +1,6 @@
 # aceew.me
 
-Personal site at https://aceew.me. Every few years I rebuild my site to learn something new, this time around I used gatsby as I plan on turning this into somewhere to store blog posts. This site will be updated with a prsimic integration.
+Personal site at aceew.me. Every few years I rebuild my site to learn something new, this time around I used gatsby as I plan on turning this into somewhere to store blog posts. This site will be updated with a prismic integration.
 
 1.  **Start developing.**
 

@@ -3,6 +3,7 @@ module.exports = {
     title: `Aaron Williams`,
     description: `Software Engineer`,
     author: `@aceew`,
+    siteUrl: `https://aceew.me`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
