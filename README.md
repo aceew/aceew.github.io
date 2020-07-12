@@ -28,4 +28,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deployments
 
-* Commits to `source` will trigger a deployment via running `npm run deploy`
+- Commits to `source` will trigger a deployment via running `npm run deploy`

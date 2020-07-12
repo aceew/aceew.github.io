@@ -34,9 +34,10 @@ function SEO({ description, lang, meta, title }) {
       }}
       link={[
         {
-          rel: 'stylesheet',
+          rel: "stylesheet",
           defer: true,
-          href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+          href:
+            "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
         },
       ]}
       title={title}

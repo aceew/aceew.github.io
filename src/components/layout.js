@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer
           style={{
-            textAlign: 'center'
+            textAlign: "center",
           }}
         >
           © {new Date().getFullYear()} Aaron Williams
