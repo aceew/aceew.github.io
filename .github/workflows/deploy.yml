@@ -5,7 +5,7 @@ on:
       - source
 
 jobs:
-  run-tests:
+  deployments:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,6 +15,9 @@ jobs:
         run: npm install
 
       - name: Deploy
-        run: npm run deploy
+        run: |
+          git config user.name "aceew-github"
+          git config user.email "a+gh-automatic@aceew.me"
+          npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }} # Required
