@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default class Icon extends React.Component {
-  render() {
-    return (
-        <a href={this.props.url} target='_blank' className='three columns home-page-icons'>
-          <i className={'text-theme-cyan fa ' + this.props.faIcon} />
-          <h6>{this.props.title}</h6>
-        </a>
-    );
-  }
-};
+const Icon = ({ url, faIcon, title }) => {
+  return (
+    <a href={ url } target='_blank' rel="noreferrer" className='four columns home-page-icons'>
+      <i className={'text-theme-cyan fa ' + faIcon} />
+        <h6>{ title }</h6>
+    </a>
+  )
+}
+
+export default Icon;
